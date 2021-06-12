@@ -1,3 +1,3 @@
 - In this project I've use Bootstrap 5 for boiler plate html/css.
 - Learned about ngDirectives and also to deploy Angular 12 application on Heroku.
-- Hosted Project: https://angular-todo-lists.herokuapp.com/about
+- Hosted Project: https://angular-todo-lists.herokuapp.com
