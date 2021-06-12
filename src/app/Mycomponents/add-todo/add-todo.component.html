@@ -1,0 +1,14 @@
+<div class="my-3">
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title"  class="form-label">Todo Title</label>
+            <input type="email" [(ngModel)]="title" class="form-control" id="title" placeholder="title" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="desc"  class="form-label">Todo Desc</label>
+            <textarea class="form-control" [(ngModel)]="desc" id="desc" rows="3" name="desc" placeholder="desc"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+</div> 

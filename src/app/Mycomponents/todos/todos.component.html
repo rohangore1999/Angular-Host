@@ -1,0 +1,15 @@
+<div class="container">
+    <h3 class="text-center mb-3">TODO List:</h3>
+    <app-add-todo (todoAdd)="AddTodo($event)"></app-add-todo>
+
+    <!-- our todos list is present in constructure so we use "this keyword" -->
+    <div *ngIf="this.todos.length===0; else elseBlock">No content.</div>
+    <ng-template #elseBlock>
+        <!-- showing todo-list -->
+        <div *ngFor="let todo of todos; index as i">
+            <!-- [todo]="todo" [i]="i" passing todo and i as input to .ts -->
+            <app-todo-item (todoCheckbox)="toggleTodo($event)" [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)">
+            </app-todo-item>
+        </div>
+    </ng-template>
+</div>
